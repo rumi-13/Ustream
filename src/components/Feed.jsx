@@ -65,7 +65,7 @@ export default function Feed({ sideMenu, category }) {
     );
   }
 
-  // If Error Occurs
+  // If Error Occurs 
   if (error) {
     return (
       <main
