@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.small-sidebar {
+  .sidebar-name,
+  .sidebar-subs,
+  .sidebar-heading {
+    @apply hidden;
+  }
+
+  .sidebar-row,
+  a {
+    @apply justify-center;
+  }
+
+  nav {
+    @apply space-y-0;
+  }
+}
