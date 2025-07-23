@@ -26,10 +26,10 @@ export default function YouTubeCloneNavbar({ setSideMenu }) {
   const isHomePage = location.pathname === "/";
 
   return (
-    <nav className="sticky top-0 z-50 w-screen bg-white/95 dark:bg-neutral-900/95 backdrop-blur-xl shadow-lg border-b border-neutral-200/50 dark:border-neutral-700/50">
-      <div className="text-neutral-800 dark:text-neutral-100 mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:gap-6 md:gap-8 lg:gap-10">
+    <nav className="sticky top-0 z-50 w-full bg-white/95 dark:bg-neutral-900/95 backdrop-blur-xl shadow-lg border-b border-neutral-200/50 dark:border-neutral-700/50">
+      <div className="text-neutral-800 dark:text-neutral-100 flex max-w-7xl w-full items-center justify-between gap-4 px-2 py-3  md:gap-8 lg:gap-10">
         {/* Left Section */}
-        <div className="flex items-center gap-3 sm:gap-4 md:gap-5">
+        <div className="flex items-center gap-2 sm:gap-4 md:gap-5">
           {/*Hamburger will be visible when only user is in HomePage*/}
           {isHomePage && (
             <button
@@ -52,15 +52,15 @@ export default function YouTubeCloneNavbar({ setSideMenu }) {
         {/* Middle Section (Search) */}
         <form
           /* TODO: handle search submit */
-          className="flex flex-1 max-w-2xl items-center"
+          className="flex flex-1 max-w-[160px] sm:max-w-sm md:max-w-md lg:max-w-xl items-center"
         >
           <div className="flex w-full shadow-sm">
             <input
               type="text"
               placeholder="Search "
-              className="w-full rounded-l-full border border-neutral-300 dark:border-neutral-600 bg-white/90 dark:bg-neutral-800/90 px-5 py-3 text-sm sm:text-base font-inter placeholder:text-neutral-500 dark:placeholder:text-neutral-400 text-neutral-800 dark:text-neutral-100 transition-all duration-200 focus:outline-none focus:border-red-500 dark:focus:border-red-400 focus:ring-2 focus:ring-red-500/20 dark:focus:ring-red-400/20 focus:bg-white dark:focus:bg-neutral-800"
-              /* TODO: bind input value */
+              className="w-full rounded-l-full border border-neutral-300 dark:border-neutral-600 bg-white/90 dark:bg-neutral-800/90 px-4 py-2.5 text-sm font-inter placeholder:text-neutral-500 dark:placeholder:text-neutral-400 text-neutral-800 dark:text-neutral-100 transition-all duration-200 focus:outline-none focus:border-red-500 dark:focus:border-red-400 focus:ring-2 focus:ring-red-500/20 dark:focus:ring-red-400/20 focus:bg-white dark:focus:bg-neutral-800"
             />
+
             <button
               type="submit"
               aria-label="Search"
@@ -81,15 +81,6 @@ export default function YouTubeCloneNavbar({ setSideMenu }) {
           >
             <MdVideoCall className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-9 lg:h-9 text-red-600 dark:text-red-400" />
           </NavLink>
-
-          {/* More Options  */}
-          <button
-            aria-label="More options"
-            className="rounded-lg p-2 transition-all duration-200 hover:bg-neutral-100 dark:hover:bg-neutral-800 hover:scale-105 active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 dark:focus-visible:ring-red-400 focus-visible:ring-offset-2"
-            /* TODO: open options menu */
-          >
-            <MdMoreVert className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 text-neutral-600 dark:text-neutral-300" />
-          </button>
 
           {/* Notifications */}
           <button
@@ -124,7 +115,7 @@ export default function YouTubeCloneNavbar({ setSideMenu }) {
             /* TODO: open profile dropdown */
           >
             <div className="rounded-full bg-white dark:bg-neutral-800 p-2">
-              <MdPersonOutline className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 text-neutral-600 dark:text-neutral-300" />
+              <MdPersonOutline className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 text-neutral-600 dark:text-neutral-300 " />
             </div>
           </NavLink>
         </div>
