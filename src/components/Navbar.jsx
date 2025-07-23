@@ -26,7 +26,7 @@ export default function YouTubeCloneNavbar({ setSideMenu }) {
   const isHomePage = location.pathname === "/";
 
   return (
-    <nav className="sticky top-0 z-50 w-full bg-white/95 dark:bg-neutral-900/95 backdrop-blur-xl shadow-lg border-b border-neutral-200/50 dark:border-neutral-700/50">
+    <nav className="sticky top-0 z-50 w-screen bg-white/95 dark:bg-neutral-900/95 backdrop-blur-xl shadow-lg border-b border-neutral-200/50 dark:border-neutral-700/50">
       <div className="text-neutral-800 dark:text-neutral-100 mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:gap-6 md:gap-8 lg:gap-10">
         {/* Left Section */}
         <div className="flex items-center gap-3 sm:gap-4 md:gap-5">

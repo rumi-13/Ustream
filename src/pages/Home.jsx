@@ -9,12 +9,14 @@ export default function Home({ sideMenu }) {
   // Home contains SideBar on Left and Feed
   return (
     <>
+    <div className="max-w-s">
       <DynamicSidebar
         sideMenu={sideMenu}
         category={category}
         setCategory={setCategory}
       />
       <Feed sideMenu={sideMenu} category={category} setCategory={setCategory} />
+    </div>
     </>
   );
 }
