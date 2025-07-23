@@ -26,7 +26,7 @@ export default function VideoCard({
         <div className="relative overflow-hidden bg-neutral-100 dark:bg-neutral-700">
           <img
             src={thumbUrl || ""}
-            alt={title ? `${title} thumbnail` : "Video thumbnail"}
+            alt=""
             className="aspect-video w-full object-cover transition-transform duration-300 group-hover:scale-105"
             onError={(e) => {
               e.target.style.display = "none";
